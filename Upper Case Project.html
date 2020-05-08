@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>UpperCase Project</title>
+</head>
+<body>
+<center><h1>UpperCase Project</h1></center>
+<br>
+<center>
+<form id="formulario">
+	<textarea placeholder="Digite o seu texto aqui..." type="text" id="campo" ></textarea>
+  <br><br>
+    <input type="submit" value="Enviar">
+</form>
+<br><br>
+<h2><b>Sobre o UpperCase Project</b></h2>
+<br><p>O UpperCase - Project é um projeto de pessoal que eu decidi criar para melhorar meu JavaScript. <br>Pórem ele serve para outras pessoas que gostariam de treinar JavaScript. Estou trabalhando tambem <br>em futura atualização deste projeto onde o úsuario poderia tranformar em letra minúscula tambem Se<br> você notar é possivel aumentar o tamanho da caixa de texto com osbr	 tres risquinho no canto inferior	</p>
+<br>Por: Mosiah Batista 
+</center>
+
+
+
+<style type="text/css">
+
+
+	body{
+
+		font-family: Arial;
+	}
+
+input [type=text] {
+height: 250px;
+}
+</style>
+
+<script type="text/javascript">
+	//Alerta Inicial
+	alert('Este é um site experimental para aprendizado do JavaScript')
+
+var form = document.getElementById('formulario');
+var campo = document.getElementById('campo');
+
+
+form.addEventListener('submit', function(e) {
+    // alerta o valor do campo
+    alert(campo.value.toLowerCase());
+
+    // impede o envio do form
+    e.preventDefault();
+});
+</script>
+</body>
+</html>
